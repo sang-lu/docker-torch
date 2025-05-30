@@ -8,7 +8,7 @@ RUN apt install -y \
     python3-pip \
     wget \
     curl \
-    ssh-client \
+    openssh-client \
     git
 
 RUN rm -rf /var/lib/apt/lists/*
