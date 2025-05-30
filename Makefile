@@ -1,23 +1,23 @@
 build-118:
-	docker build -t sanglu/torch:11.8.0 -f 118.Dockerfile .
+	docker build -t sanglu/torch:11.8.0 -f cuda-118.Dockerfile .
 
 build-push-118: build-118
 	docker push sanglu/torch:11.8.0
 
 build-121:
-	docker build -t sanglu/torch:12.1.1 -f 121.Dockerfile .
+	docker build -t sanglu/torch:12.1.1 -f cuda-121.Dockerfile .
 
 build-push-121: build-121
 	docker push sanglu/torch:12.1.1
 
 build-124:
-	docker build -t sanglu/torch:12.4.1 -f 124.Dockerfile .
+	docker build -t sanglu/torch:12.4.1 -f cuda-124.Dockerfile .
 
 build-push-124: build-124
 	docker push sanglu/torch:12.4.1
 
 build-128:
-	docker build -t sanglu/torch:12.8.1 -f 128.Dockerfile .
+	docker build -t sanglu/torch:12.8.1 -f cuda-128.Dockerfile .
 
 build-push-128: build-128
 	docker push sanglu/torch:12.8.1
