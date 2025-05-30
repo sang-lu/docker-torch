@@ -1,5 +1,5 @@
 # Use an NVIDIA CUDA base image
-FROM nvidia/cuda:12.8.1-cudnn-devel-ubuntu22.04
+FROM nvidia/cuda:12.8.1-devel-ubuntu22.04
 
 # Install necessary dependencies
 RUN apt update
@@ -7,7 +7,9 @@ RUN apt install -y \
     python3.10 \
     python3-pip \
     wget \
-    curl
+    curl \
+    ssh-client \
+    git
 
 RUN rm -rf /var/lib/apt/lists/*
 

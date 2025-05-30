@@ -7,7 +7,9 @@ RUN apt install -y \
     python3.10 \
     python3-pip \
     wget \
-    curl
+    curl \
+    ssh-client \
+    git
 
 RUN rm -rf /var/lib/apt/lists/*
 

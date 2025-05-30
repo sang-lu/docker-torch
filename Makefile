@@ -10,6 +10,12 @@ build-cuda-121:
 build-push-cuda-121: build-cuda-121
 	docker push sanglu/torch:cuda-12.1.1
 
+build-cuda-124:
+	docker build -t sanglu/torch:cuda-12.4.1 -f cuda-124.Dockerfile .
+
+build-push-cuda-124: build-cuda-124
+	docker push sanglu/torch:cuda-12.4.1
+
 build-cuda-128:
 	docker build -t sanglu/torch:cuda-12.8.1 -f cuda-128.Dockerfile .
 
