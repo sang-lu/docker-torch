@@ -2,6 +2,7 @@
 FROM nvidia/cuda:11.8.0-devel-ubuntu22.04
 
 # Install necessary dependencies
+RUN sed -i 's|http://.*.ubuntu.com|http://archive.ubuntu.com|g' /etc/apt/sources.list
 RUN apt update
 RUN apt install -y \
     python3.10 \
