@@ -10,7 +10,7 @@ This project sets up a Docker environment for PyTorch with CUDA support. It cons
 - Installs Python 3.10 and essential tools
 - Sets up PyTorch with CUDA support
 - Includes a simple entrypoint script to verify the PyTorch installation and CUDA availability.
-- Supported CUDA versions: 11.8.0, 12.1.1, 12.8.1
+- Supported CUDA versions: 11.8.0, 12.1.1, 12.4.1, 12.8.1
 
 The setup allows for GPU-accelerated PyTorch development in a containerized environment.
 
